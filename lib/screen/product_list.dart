@@ -1,15 +1,15 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:user_interface_design/screen/add_new_product_screen.dart';
-
+import 'package:user_interface_design/screen/update_product.dart';
 import '../models/product.dart';
 import '../widgets/product_item.dart';
-class ProductList extends StatefulWidget {
-  const ProductList({super.key, required this.product});
 
-  final Product product;
+class ProductList extends StatefulWidget {
+  const ProductList({super.key, });
+
+  // final Product product;
 
   @override
   State<ProductList> createState() => _ProductListState();
@@ -59,7 +59,7 @@ class _ProductListState extends State<ProductList> {
             context,
             MaterialPageRoute(
                 builder: (context) {
-                  return const AddNewProductScreen();
+                  return const UpdateNewProductScreen(productId: 'ProductId', );
                 }
             ),
           );
