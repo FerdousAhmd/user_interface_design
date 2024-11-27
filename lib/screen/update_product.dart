@@ -93,7 +93,7 @@ class _UpdateNewProductScreenState extends State<UpdateNewProductScreen> {
     setState(() {
       _inprogress=true;
     });
-    Uri uri=Uri.parse('http://164.68.107.70:6060/api/v1/UpdateProduct/${widget.productId}');
+    Uri uri=Uri.parse('https://crud.teamrabbil.com/api/v1/UpdateProduct/${widget.productId}');
     Map<String, dynamic> requestBody={
       "Img": _productImageTEController.text,
       "ProductCode": _porductCodeTEController.text,

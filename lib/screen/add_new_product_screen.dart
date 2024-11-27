@@ -128,7 +128,7 @@ class _AddNewProductScreenState extends State<AddNewProductScreen> {
   Future<void> addNewProduct() async {
     _inProgress = true;
     setState(() {});
-    Uri uri = Uri.parse('http://164.68.107.70:6060/api/v1/CreateProduct');
+    Uri uri = Uri.parse('https://crud.teamrabbil.com/api/v1/CreateProduct');
     Map<String, dynamic> requestBody = {
       "Img": _imageTEController.text,
       "ProductCode": _codeTEController.text,

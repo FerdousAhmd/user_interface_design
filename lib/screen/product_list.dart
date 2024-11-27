@@ -72,7 +72,7 @@ class _ProductListState extends State<ProductList> {
   Future<void> getProductList() async {
     _inProgress = true;
     setState(() {});
-    Uri uri = Uri.parse('http://164.68.107.70:6060/api/v1/ReadProduct');
+    Uri uri = Uri.parse('https://crud.teamrabbil.com/api/v1/ReadProduct');
     Response response = await get(uri);
     print(response);
     print(response.statusCode);

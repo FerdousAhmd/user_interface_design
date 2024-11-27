@@ -49,7 +49,7 @@ class _DeleteproductScreenState extends State<DeleteproductScreen> {
     setState(() {
       _inprogrees=true;
     });
-    Uri uri=Uri.parse('http://164.68.107.70:6060/api/v1/DeleteProduct/${widget.productID}');
+    Uri uri=Uri.parse('https://crud.teamrabbil.com/api/v1/DeleteProduct/639da5960817590a4e4fd53c/${widget.productID}');
     Response response=await get(uri, headers: {"Content-Type":"application/json"});
     print(response.statusCode);
     print(response.body);
